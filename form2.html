@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form 2</title>
+    </head> 
+    <style>
+        form{
+            margin: auto;
+            margin-top: 100px;
+            height: 650px;
+            width: 300px;
+            padding: 20px;
+            border: 3px solid rgb(223, 227, 10);
+            border-radius: 10px;
+            background-color:rgba(16, 228, 97, 0.778);
+        }
+        input{
+            margin: 10px;
+            background-color: beige;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        input[type="submit"]{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: lightblue;
+        }
+        label{
+            margin: 10px;
+        }
+        textarea{
+            margin: 10px;
+            background-color: beige;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        input[type="button"]{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: lightblue;
+        }
+    </style>
+    <body bgcolor="purple">
+       <form autocomplete="on">
+        <label>Username:</label>
+        <input type="text" name="name" placeholder="Username" id="uid"><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Password" autocomplete="off" id="pwd"><br><br>
+        <label>LoginAs:</label>
+        <input type="radio" name="loginas" value="Faculty" disabled>
+        <label>Faculty</label>
+        <input type="radio" name="loginas" value="Faculty" checked>
+        <label>Student</label><br><br>
+        <label>Upload Photo</label>
+        <input type="file" name="photo"><br>
+        <label for="State">State:</label>
+        <select name="State">
+            <option value="Karnataka">Karnataka</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+        </select><br><br>
+        <label for="Course">Course:</label>
+        <select name="Course">
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+        </select><br>
+        <label>DOB:</label>
+        <input type="date" name="dob"><br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="8" cols="20" placeholder="Enter any comments here..."></textarea><br>
+        <input type="submit" value="Login">
+        <input type="button" autofocus  name="submit" value="Submit" onclick="alert('Form Submitted')"><br>
+       </form>
+    </body>
+</html>
